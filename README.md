@@ -1,110 +1,72 @@
 # ☕ Kopi dan Nyemil
 
-Aplikasi mobile pemesanan kopi dan camilan berbasis **Android (Kotlin)** dengan tampilan modern, menarik, dan mudah digunakan. Aplikasi ini dibuat untuk memenuhi tugas Ujian Tengah Semester (UTS) mata kuliah **Pengembangan Aplikasi Mobile**.
+Aplikasi mobile pemesanan kopi dan camilan berbasis Android (Kotlin + Jetpack Compose) dengan tema biru muda dan putih. Dibuat untuk Memenuhi UTS mata kuliah Pengembangan Aplikasi Mobile.
 
-> **Tagline:** *Get a taste of your wish*
+**Tagline:** Get a taste of your wish
 
-## 📱 Deskripsi Aplikasi
+---
 
-Kopi dan Nyemil merupakan aplikasi Android yang memungkinkan pengguna untuk memesan berbagai pilihan kopi, minuman, dan camilan secara praktis melalui smartphone.
+## 📱 Deskripsi
 
-Pengguna dapat membuat akun, login, melihat daftar menu, memilih makanan atau minuman, mengatur jumlah pesanan, mengisi alamat pengiriman, hingga mendapatkan konfirmasi pesanan.
+Pengguna dapat mendaftar atau login, melihat daftar makanan dan minuman, menambahkan pesanan ke keranjang, mengisi alamat pengiriman, lalu menerima konfirmasi pesanan. Seluruh data bersifat statis (dummy) dan disimpan di memori, tanpa database.
 
-Aplikasi ini menggunakan **data statis (dummy data)** dan tidak memerlukan database.
+---
 
-## ✨ Fitur Aplikasi
+## ✨ Fitur
 
-- **Splash / Welcome:** Halaman pembuka aplikasi.
-- **Sign Up:** Pilihan untuk masuk atau membuat akun.
-- **Login:** Masuk menggunakan akun pengguna dengan validasi.
-- **Register:** Membuat akun baru dengan validasi input.
-- **Home:** Menampilkan daftar makanan dan minuman dengan gambar dan harga.
-- **Kategori Menu:** Memudahkan pengguna memilih kategori makanan atau minuman.
-- **Keranjang:** Menambahkan dan mengurangi jumlah pesanan.
-- **Profile:** Menampilkan dan mengubah informasi pengguna serta logout.
-- **Alamat Pengiriman (Order):** Mengisi informasi penerima dan alamat pengiriman.
-- **Konfirmasi Pesanan:** Menampilkan informasi keberhasilan pemesanan, status pesanan, dan ringkasan transaksi.
-- **Bottom Navigation:** Memudahkan perpindahan antarhalaman aplikasi.
+* **Splash / Welcome** dengan animasi logo
+* **Sign Up** (pilihan Register atau Login)
+* **Login** dengan validasi (akun demo tersedia)
+* **Register** dengan validasi (nama, username unik, password minimal 6 karakter)
+* **Home**: sapaan nama pengguna, filter kategori (Semua / Minuman / Makanan), 7 menu dengan foto, tombol tambah/kurang jumlah, dan bar ringkasan keranjang
+* **Profile**: lihat dan ubah nama, simpan, logout
+* **Alamat Pengiriman (Order)**: ringkasan pesanan dan total, form nama, alamat, dan patokan
+* **Konfirmasi Pesanan**: animasi centang dan ringkasan order
+* **Bottom Navigation** (Home / Order / Profile) dengan badge jumlah item
 
-## 🛠️ Teknologi yang Digunakan
+---
 
-- **Bahasa Pemrograman:** Kotlin
-- **IDE:** Android Studio
-- **Layout UI:** XML
-- **Android SDK:** Android SDK
-- **Build System:** Gradle
-- **AndroidX:** AppCompat dan komponen AndroidX.
-- **Data:** Dummy Data (tanpa database).
+## 🛠️ Teknologi
 
-## 🚀 Cara Menjalankan Aplikasi
+* **Kotlin 2.2**
+* **Jetpack Compose** dan **Material 3**
+* **Navigation Compose**
+* **ViewModel** (state in-memory)
+* **Coil** (memuat gambar menu)
+* **Android Gradle Plugin 8.5**, `minSdk 24`, `targetSdk 34`
 
-1. Install Android Studio pada komputer.
-2. Clone atau download repository ini.
-3. Buka folder project `KopiDanNyemil` menggunakan Android Studio.
-4. Tunggu proses Gradle Sync hingga selesai.
-5. Hubungkan perangkat Android atau jalankan emulator.
-6. Klik tombol **Run ▶** untuk menjalankan aplikasi.
+---
 
-**Persyaratan:**
-- Android Studio.
-- JDK yang sesuai dengan konfigurasi Gradle project.
-- Perangkat Android atau emulator.
+## 🚀 Cara Menjalankan
+
+1. Install Android Studio (versi terbaru) dan JDK 17.
+2. Buka folder project **KopiDanNyemil** lewat **File → Open**, lalu tunggu *Gradle Sync* selesai.
+3. Pilih emulator atau HP Android (Android 7.0 / API 24 ke atas).
+4. Klik tombol **Run ▶**.
+5. **Akun demo:** username `demo` dan password `demo123`, atau buat akun baru lewat Register.
+
+---
 
 ## 🔄 Alur Aplikasi
 
-`Splash (Welcome) → Sign Up → Login → Register → Home → Profile → Order (Alamat Pengiriman) → Konfirmasi Pesanan`
+* Splash ➔ Sign Up ➔ Login / Register ➔ Home ➔ (Order) Alamat ➔ Konfirmasi ➔ Home
+* Home ⇄ Profile melalui bottom navigation.
 
-Pengguna juga dapat berpindah ke halaman Profile melalui Bottom Navigation.
-
-## 📸 Screenshot Aplikasi
-
-Screenshot tampilan aplikasi akan ditambahkan pada folder `screenshots` di repository ini.
-
-KopiDanNyemil/
-├── screenshots/
-│   ├── 01_splash.png
-│   ├── 02_signup.png
-│   ├── 03_login.png
-│   ├── 04_register.png
-│   ├── 05_home.png
-│   ├── 06_profile.png
-│   ├── 07_alamat.png
-│   └── 08_konfirmasi.png
-├── app/
-├── README.md
+---
 
 ## 📸 Screenshot Aplikasi
 
-<div align="center">
-  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 01 19" src="https://github.com/user-attachments/assets/cc3bdb8b-8e5c-487c-a445-04d4c1e352ab" />
- alt="Splash" />
-  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 20 34" src="https://github.com/user-attachments/assets/d19ba2b9-7e59-43ed-ad8c-9a1a8ba623e5" />
- alt="Sign Up" />
-  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 20 34" src="https://github.com/user-attachments/assets/b309980c-8c07-4352-b5da-558240aab6b9" />
- alt="Login" />
-  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 22 00" src="https://github.com/user-attachments/assets/367b17d8-424a-4273-a027-a5563b50cdbf" />
- alt="Register" />
-</div>
+### Splash, Sign Up, Login, dan Register
+| Splash | Sign Up | Login | Register |
+| :---: | :---: | :---: | :---: |
+| <img src="screenshots/splash.png" width="200"> | <img src="screenshots/signup.png" width="200"> | <img src="screenshots/login.png" width="200"> | <img src="screenshots/register.png" width="200"> |
 
-<div align="center">
-  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 22 38" src="https://github.com/user-attachments/assets/f0087376-ac43-4193-bc2c-9b4683741bb1" />
- alt="Home" />
-  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 23 54" src="https://github.com/user-attachments/assets/5075507d-d586-4a29-8bfc-5684e06a8cf6" />
- alt="Home 2" />
-  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 24 46" src="https://github.com/user-attachments/assets/238fbf1c-7aa4-4125-aa81-2d62654e18ba" />
- alt="Profile" />
-  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 25 53" src="https://github.com/user-attachments/assets/b5e24c68-2c51-48d0-9dca-4191dd2553ab" />
- alt="Alamat Pengiriman" />
-</div>
+### Home, Profile, Alamat, dan Konfirmasi
+| Home | Profile | Alamat | Konfirmasi |
+| :---: | :---: | :---: | :---: |
+| <img src="screenshots/home.png" width="200"> | <img src="screenshots/profile.png" width="200"> | <img src="screenshots/alamat.png" width="200"> | <img src="screenshots/konfirmasi.png" width="200"> |
 
-<div align="center">
-  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 26 39" src="https://github.com/user-attachments/assets/f096a4e4-9242-4a84-ad51-af5216a92fc6" />
-" alt="Alamat Pengiriman 2" />
-  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 27 33" src="https://github.com/user-attachments/assets/b67ce20e-a1c0-4d7c-85a0-2bb4fb3f346a" />
- alt="Konfirmasi Pesanan" />
-  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 28 17" src="https://github.com/user-attachments/assets/a0197f85-a35d-48c9-8fd8-fe48f9a5ca01" />
- alt="Konfirmasi Pesanan 2" />
-</div>
+---
 
 ## 📁 Struktur Project
 
@@ -113,32 +75,18 @@ KopiDanNyemil/
 ├── app/
 │   └── src/
 │       └── main/
-│           ├── java/
-│           │   └── com/example/kopidannyemil/
-│           │       ├── MainActivity.kt
-│           │       ├── HomeActivity.kt
-│           │       ├── LoginActivity.kt
-│           │       ├── RegisterActivity.kt
-│           │       ├── ProfileActivity.kt
-│           │       ├── OrderActivity.kt
-│           │       ├── ConfirmationActivity.kt
-│           │       └── FoodAdapter.kt
-│           └── res/
-│               ├── drawable/
-│               ├── layout/
-│               └── values/
-├── gradle/
-├── build.gradle.kts
-├── settings.gradle.kts
+│           └── java/
+│               └── com/kopidannyemil/app/
+│                   ├── MainActivity.kt        # NavHost dan routing
+│                   ├── AppViewModel.kt        # state: user, keranjang, order
+│                   ├── data/Models.kt         # model dan dummy data
+│                   └── ui/
+│                       ├── theme/Theme.kt     # palet biru muda dan putih
+│                       ├── components/        # TextField, Button, BottomBar, dll.
+│                       └── screens/           # 8 layar sesuai wireframe
+├── screenshots/                               # Kumpulan gambar screenshot
 └── README.md
-```
 
-## 👤 Author
-
-- **Nama:** Fikri Ahmad Ramdani
-- **GitHub:** [@FikriAhmd](https://github.com/FikriAhmd)
-- **Repository:** [KopiDanNyemil](https://github.com/FikriAhmd/KopiDanNyemil)
-
----
-
-*Dibuat dengan ☕ dan semangat untuk memenuhi tugas UTS Pengembangan Aplikasi Mobile.*
+👤 Author
+Nama: Fikri Ahmad Ramdani
+NIM: 1247050003
