@@ -1,0 +1,90 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="260dp"
+    android:height="260dp"
+    android:viewportWidth="260"
+    android:viewportHeight="260">
+
+    <!-- Organic Background Blob -->
+    <path
+        android:fillColor="#384E60"
+        android:pathData="M130,20 C195,20 245,65 240,135 C235,205 175,240 110,235 C40,230 15,175 25,110 C35,40 65,20 130,20 Z" />
+
+    <!-- Cangkir Kopi Raksasa: Tutup Oren -->
+    <path
+        android:fillColor="#F2522E"
+        android:pathData="M95,70 L185,70 C188,70 190,72 189,75 L184,85 C184,87 182,88 180,88 L100,88 C98,88 96,87 96,85 L91,75 C90,72 92,70 95,70 Z" />
+
+    <!-- Cangkir Kopi Raksasa: Atas Putih -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M98,88 L182,88 L176,115 L104,115 Z" />
+
+    <!-- Cangkir Kopi Raksasa: Sabuk Oren -->
+    <path
+        android:fillColor="#F2522E"
+        android:pathData="M104,115 L176,115 L168,165 L112,165 Z" />
+
+    <!-- Icon Biji Kopi Putih di Sabuk Cangkir -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M140,132 C134,132 129,136 129,142 C129,148 134,152 140,152 C146,152 151,148 151,142 C151,136 146,132 140,132 Z" />
+    <path
+        android:pathData="M140,134 C137,138 143,146 140,150"
+        android:strokeColor="#F2522E"
+        android:strokeLineCap="round"
+        android:strokeWidth="1.5" />
+
+    <!-- Cangkir Kopi Raksasa: Bawah Putih -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M112,165 L168,165 L160,210 L120,210 Z" />
+
+    <!-- Karakter Orang Nyender: Kepala & Rambut -->
+    <path
+        android:fillColor="#1C2A38"
+        android:pathData="M66,74 C66,68 71,64 77,64 C83,64 88,68 88,74 L86,82 L66,82 Z" />
+    <path
+        android:fillColor="#FFE0BD"
+        android:pathData="M69,80 C69,78 84,78 84,80 L82,92 C82,96 71,96 71,92 Z" />
+
+    <!-- Karakter Orang Nyender: Baju White & Jaket Navy -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M66,92 L84,92 L86,145 L64,145 Z" />
+    <path
+        android:fillColor="#243444"
+        android:pathData="M60,93 C64,92 68,92 68,97 L66,145 L56,140 Z" />
+    <path
+        android:fillColor="#243444"
+        android:pathData="M82,93 C86,92 90,92 90,97 L88,145 L78,145 Z" />
+
+    <!-- Karakter Orang Nyender: Celana & Sepatu -->
+    <path
+        android:fillColor="#1B2936"
+        android:pathData="M65,145 L85,145 L87,195 L77,195 L75,160 L73,160 L71,195 L61,195 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M58,195 L70,195 C70,198 58,200 56,198 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M76,195 L88,195 C88,198 76,200 74,198 Z" />
+
+    <!-- Tangan Memegang Cangkir Kopi Kecil + Uap -->
+    <path
+        android:fillColor="#243444"
+        android:pathData="M62,98 L44,110 L48,116 L64,106 Z" />
+    <path
+        android:fillColor="#FFE0BD"
+        android:pathData="M42,110 C40,108 44,114 46,116 Z" />
+    <path
+        android:fillColor="#F2522E"
+        android:pathData="M34,106 L44,106 L42,118 L36,118 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M33,104 L45,104 L44,106 L34,106 Z" />
+    <path
+        android:pathData="M37,100 Q35,95 37,90 M41,100 Q43,95 41,90"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:strokeWidth="1.5" />
+</vector>

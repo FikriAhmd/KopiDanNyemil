@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="180dp"
+    android:height="180dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Biji Kopi 1 (Besar - Kanan Atas) -->
+    <group android:pivotX="75" android:pivotY="35" android:rotation="-25">
+        <path
+            android:fillColor="#3B5062"
+            android:pathData="M 75,10 C 90,10 98,22 98,40 C 98,58 90,70 75,70 C 60,70 52,58 52,40 C 52,22 60,10 75,10 Z" />
+        <path
+            android:strokeColor="#1B2A38"
+            android:strokeWidth="2.5"
+            android:pathData="M 75,12 C 70,26 80,54 75,68" />
+    </group>
+
+    <!-- Biji Kopi 2 (Sedang - Kiri Atas) -->
+    <group android:pivotX="40" android:pivotY="20" android:rotation="-10">
+        <path
+            android:fillColor="#344656"
+            android:pathData="M 40,5 C 52,5 58,15 58,28 C 58,41 52,50 40,50 C 28,50 22,41 22,28 C 22,15 28,5 40,5 Z" />
+        <path
+            android:strokeColor="#1B2A38"
+            android:strokeWidth="2"
+            android:pathData="M 40,7 C 36,18 44,38 40,48" />
+    </group>
+
+    <!-- Biji Kopi 3 (Kecil - Kanan Bawah) -->
+    <group android:pivotX="82" android:pivotY="75" android:rotation="-40">
+        <path
+            android:fillColor="#2D3E4D"
+            android:pathData="M 82,58 C 92,58 97,66 97,77 C 97,88 92,95 82,95 C 72,95 67,88 67,77 C 67,66 72,58 82,58 Z" />
+        <path
+            android:strokeColor="#1B2A38"
+            android:strokeWidth="1.8"
+            android:pathData="M 82,60 C 79,69 85,84 82,93" />
+    </group>
+</vector>

@@ -1,0 +1,1276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC">
+
+    <!-- 1. HEADER NAVY MELENGKUNG -->
+    <RelativeLayout
+        android:id="@+id/header_home"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:background="@drawable/bg_header_navy"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="32dp">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_beans_pattern" />
+
+        <LinearLayout
+            android:id="@+id/layout_user_greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_greeting_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Halo User,"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Good morning, get your coffee!"
+                android:textColor="#94A3B8"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/layout_user_greeting"
+            android:src="@drawable/ic_bell"
+            app:tint="#FFFFFF" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/layout_user_greeting"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/bg_search_bar"
+            android:paddingStart="16dp"
+            android:paddingEnd="4dp">
+
+            <ImageView
+                android:id="@+id/iv_search_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@id/btn_search_action"
+                android:layout_toEndOf="@id/iv_search_icon"
+                android:background="@null"
+                android:hint="Search coffee or snacks..."
+                android:paddingStart="10dp"
+                android:textColor="#1E293B"
+                android:textColorHint="#94A3B8"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/btn_search_action"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_tab_active"
+                android:padding="10dp"
+                android:src="@drawable/ic_search"
+                app:tint="#FFFFFF" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 2. KONTEN UTAMA -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_checkout_bar"
+        android:layout_below="@id/header_home"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="24dp">
+
+            <!-- BAGIAN A: 5 MENU HORIZONTAL -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:fontFamily="serif"
+                android:text="Menu"
+                android:textColor="#1E293B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:clipToPadding="false"
+                android:paddingStart="24dp"
+                android:paddingEnd="12dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- H1: Kopi Aren -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="155dp"
+                        android:layout_height="195dp"
+                        android:layout_marginEnd="14dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="2dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/kopi_aren" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:text="Kopi Aren"
+                                android:textColor="#1E293B"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="4dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="Rp 22.000"
+                                    android:textColor="#FF5436"
+                                    android:textSize="11sp"
+                                    android:textStyle="bold" />
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="28dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true">
+                                    <ImageView
+                                        android:id="@+id/h_btn_add_1"
+                                        android:layout_width="28dp"
+                                        android:layout_height="28dp"
+                                        android:background="@drawable/bg_circle_orange"
+                                        android:padding="5dp"
+                                        android:src="@drawable/ic_plus" />
+                                    <LinearLayout
+                                        android:id="@+id/h_layout_counter_1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="28dp"
+                                        android:background="@drawable/bg_counter_pill"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal"
+                                        android:paddingHorizontal="2dp"
+                                        android:visibility="gone">
+                                        <ImageView
+                                            android:id="@+id/h_btn_minus_1"
+                                            android:layout_width="18dp"
+                                            android:layout_height="18dp"
+                                            android:padding="2dp"
+                                            android:src="@drawable/ic_minus" />
+                                        <TextView
+                                            android:id="@+id/h_tv_count_1"
+                                            android:layout_width="14dp"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="1"
+                                            android:textColor="#FF5436"
+                                            android:textSize="11sp"
+                                            android:textStyle="bold" />
+                                        <ImageView
+                                            android:id="@+id/h_btn_plus_1"
+                                            android:layout_width="18dp"
+                                            android:layout_height="18dp"
+                                            android:padding="2dp"
+                                            android:src="@drawable/ic_plus"
+                                            app:tint="#FF5436" />
+                                    </LinearLayout>
+                                </FrameLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- H2: Donat Cokelat -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="155dp"
+                        android:layout_height="195dp"
+                        android:layout_marginEnd="14dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="2dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/donat_coklat" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:text="Donat Cokelat"
+                                android:textColor="#1E293B"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="4dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="Rp 12.000"
+                                    android:textColor="#FF5436"
+                                    android:textSize="11sp"
+                                    android:textStyle="bold" />
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="28dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true">
+                                    <ImageView
+                                        android:id="@+id/h_btn_add_2"
+                                        android:layout_width="28dp"
+                                        android:layout_height="28dp"
+                                        android:background="@drawable/bg_circle_orange"
+                                        android:padding="5dp"
+                                        android:src="@drawable/ic_plus" />
+                                    <LinearLayout
+                                        android:id="@+id/h_layout_counter_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="28dp"
+                                        android:background="@drawable/bg_counter_pill"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal"
+                                        android:paddingHorizontal="2dp"
+                                        android:visibility="gone">
+                                        <ImageView
+                                            android:id="@+id/h_btn_minus_2"
+                                            android:layout_width="18dp"
+                                            android:layout_height="18dp"
+                                            android:padding="2dp"
+                                            android:src="@drawable/ic_minus" />
+                                        <TextView
+                                            android:id="@+id/h_tv_count_2"
+                                            android:layout_width="14dp"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="1"
+                                            android:textColor="#FF5436"
+                                            android:textSize="11sp"
+                                            android:textStyle="bold" />
+                                        <ImageView
+                                            android:id="@+id/h_btn_plus_2"
+                                            android:layout_width="18dp"
+                                            android:layout_height="18dp"
+                                            android:padding="2dp"
+                                            android:src="@drawable/ic_plus"
+                                            app:tint="#FF5436" />
+                                    </LinearLayout>
+                                </FrameLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- H3: Sourdough -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="155dp"
+                        android:layout_height="195dp"
+                        android:layout_marginEnd="14dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="2dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/sourdough" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:text="Sourdough"
+                                android:textColor="#1E293B"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="4dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="Rp 18.000"
+                                    android:textColor="#FF5436"
+                                    android:textSize="11sp"
+                                    android:textStyle="bold" />
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="28dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true">
+                                    <ImageView
+                                        android:id="@+id/h_btn_add_3"
+                                        android:layout_width="28dp"
+                                        android:layout_height="28dp"
+                                        android:background="@drawable/bg_circle_orange"
+                                        android:padding="5dp"
+                                        android:src="@drawable/ic_plus" />
+                                    <LinearLayout
+                                        android:id="@+id/h_layout_counter_3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="28dp"
+                                        android:background="@drawable/bg_counter_pill"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal"
+                                        android:paddingHorizontal="2dp"
+                                        android:visibility="gone">
+                                        <ImageView
+                                            android:id="@+id/h_btn_minus_3"
+                                            android:layout_width="18dp"
+                                            android:layout_height="18dp"
+                                            android:padding="2dp"
+                                            android:src="@drawable/ic_minus" />
+                                        <TextView
+                                            android:id="@+id/h_tv_count_3"
+                                            android:layout_width="14dp"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="1"
+                                            android:textColor="#FF5436"
+                                            android:textSize="11sp"
+                                            android:textStyle="bold" />
+                                        <ImageView
+                                            android:id="@+id/h_btn_plus_3"
+                                            android:layout_width="18dp"
+                                            android:layout_height="18dp"
+                                            android:padding="2dp"
+                                            android:src="@drawable/ic_plus"
+                                            app:tint="#FF5436" />
+                                    </LinearLayout>
+                                </FrameLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- H4: Cappuccino -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="155dp"
+                        android:layout_height="195dp"
+                        android:layout_marginEnd="14dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="2dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/cappucino" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:text="Cappuccino"
+                                android:textColor="#1E293B"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="4dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="Rp 24.000"
+                                    android:textColor="#FF5436"
+                                    android:textSize="11sp"
+                                    android:textStyle="bold" />
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="28dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true">
+                                    <ImageView
+                                        android:id="@+id/h_btn_add_4"
+                                        android:layout_width="28dp"
+                                        android:layout_height="28dp"
+                                        android:background="@drawable/bg_circle_orange"
+                                        android:padding="5dp"
+                                        android:src="@drawable/ic_plus" />
+                                    <LinearLayout
+                                        android:id="@+id/h_layout_counter_4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="28dp"
+                                        android:background="@drawable/bg_counter_pill"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal"
+                                        android:paddingHorizontal="2dp"
+                                        android:visibility="gone">
+                                        <ImageView
+                                            android:id="@+id/h_btn_minus_4"
+                                            android:layout_width="18dp"
+                                            android:layout_height="18dp"
+                                            android:padding="2dp"
+                                            android:src="@drawable/ic_minus" />
+                                        <TextView
+                                            android:id="@+id/h_tv_count_4"
+                                            android:layout_width="14dp"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="1"
+                                            android:textColor="#FF5436"
+                                            android:textSize="11sp"
+                                            android:textStyle="bold" />
+                                        <ImageView
+                                            android:id="@+id/h_btn_plus_4"
+                                            android:layout_width="18dp"
+                                            android:layout_height="18dp"
+                                            android:padding="2dp"
+                                            android:src="@drawable/ic_plus"
+                                            app:tint="#FF5436" />
+                                    </LinearLayout>
+                                </FrameLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- H5: Matcha Latte -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="155dp"
+                        android:layout_height="195dp"
+                        android:layout_marginEnd="14dp"
+                        app:cardBackgroundColor="#FFFFFF"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="2dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/matcha" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:text="Matcha Latte"
+                                android:textColor="#1E293B"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="4dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="Rp 25.000"
+                                    android:textColor="#FF5436"
+                                    android:textSize="11sp"
+                                    android:textStyle="bold" />
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="28dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true">
+                                    <ImageView
+                                        android:id="@+id/h_btn_add_5"
+                                        android:layout_width="28dp"
+                                        android:layout_height="28dp"
+                                        android:background="@drawable/bg_circle_orange"
+                                        android:padding="5dp"
+                                        android:src="@drawable/ic_plus" />
+                                    <LinearLayout
+                                        android:id="@+id/h_layout_counter_5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="28dp"
+                                        android:background="@drawable/bg_counter_pill"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal"
+                                        android:paddingHorizontal="2dp"
+                                        android:visibility="gone">
+                                        <ImageView
+                                            android:id="@+id/h_btn_minus_5"
+                                            android:layout_width="18dp"
+                                            android:layout_height="18dp"
+                                            android:padding="2dp"
+                                            android:src="@drawable/ic_minus" />
+                                        <TextView
+                                            android:id="@+id/h_tv_count_5"
+                                            android:layout_width="14dp"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="1"
+                                            android:textColor="#FF5436"
+                                            android:textSize="11sp"
+                                            android:textStyle="bold" />
+                                        <ImageView
+                                            android:id="@+id/h_btn_plus_5"
+                                            android:layout_width="18dp"
+                                            android:layout_height="18dp"
+                                            android:padding="2dp"
+                                            android:src="@drawable/ic_plus"
+                                            app:tint="#FF5436" />
+                                    </LinearLayout>
+                                </FrameLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- BAGIAN B: 5 MENU VERTIKAL REKOMENDASI -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="serif"
+                android:text="Menu Rekomendasi"
+                android:textColor="#1E293B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Item 1: Kopi Aren -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+                    <ImageView
+                        android:id="@+id/img_item1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/kopi_aren" />
+                    <FrameLayout
+                        android:id="@+id/container_counter1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true">
+                        <ImageView
+                            android:id="@+id/btn_add_1"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_circle_orange"
+                            android:padding="6dp"
+                            android:src="@drawable/ic_plus" />
+                        <LinearLayout
+                            android:id="@+id/layout_counter_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_counter_pill"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="4dp"
+                            android:visibility="gone">
+                            <ImageView
+                                android:id="@+id/btn_minus_1"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:padding="4dp"
+                                android:src="@drawable/ic_minus" />
+                            <TextView
+                                android:id="@+id/tv_count_1"
+                                android:layout_width="22dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="#FF5436"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                            <ImageView
+                                android:id="@+id/btn_plus_1"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:padding="4dp"
+                                android:src="@drawable/ic_plus"
+                                app:tint="#FF5436" />
+                        </LinearLayout>
+                    </FrameLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="14dp"
+                        android:layout_toEndOf="@id/img_item1"
+                        android:layout_toStartOf="@id/container_counter1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kopi Susu Gula Aren"
+                            android:textColor="#1E293B"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Espresso, susu, gula aren"
+                            android:textColor="#94A3B8"
+                            android:textSize="12sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Rp 22.000"
+                            android:textColor="#FF5436"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Item 2: Donat Cokelat -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+                    <ImageView
+                        android:id="@+id/img_item2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/donat_coklat" />
+                    <FrameLayout
+                        android:id="@+id/container_counter2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true">
+                        <ImageView
+                            android:id="@+id/btn_add_2"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_circle_orange"
+                            android:padding="6dp"
+                            android:src="@drawable/ic_plus" />
+                        <LinearLayout
+                            android:id="@+id/layout_counter_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_counter_pill"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="4dp"
+                            android:visibility="gone">
+                            <ImageView
+                                android:id="@+id/btn_minus_2"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:padding="4dp"
+                                android:src="@drawable/ic_minus" />
+                            <TextView
+                                android:id="@+id/tv_count_2"
+                                android:layout_width="22dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="#FF5436"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                            <ImageView
+                                android:id="@+id/btn_plus_2"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:padding="4dp"
+                                android:src="@drawable/ic_plus"
+                                app:tint="#FF5436" />
+                        </LinearLayout>
+                    </FrameLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="14dp"
+                        android:layout_toEndOf="@id/img_item2"
+                        android:layout_toStartOf="@id/container_counter2"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Donat Cokelat"
+                            android:textColor="#1E293B"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Donat empuk, glaze cokelat"
+                            android:textColor="#94A3B8"
+                            android:textSize="12sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Rp 12.000"
+                            android:textColor="#FF5436"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Item 3: Sourdough -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+                    <ImageView
+                        android:id="@+id/img_item3"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sourdough" />
+                    <FrameLayout
+                        android:id="@+id/container_counter3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true">
+                        <ImageView
+                            android:id="@+id/btn_add_3"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_circle_orange"
+                            android:padding="6dp"
+                            android:src="@drawable/ic_plus" />
+                        <LinearLayout
+                            android:id="@+id/layout_counter_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_counter_pill"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="4dp"
+                            android:visibility="gone">
+                            <ImageView
+                                android:id="@+id/btn_minus_3"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:padding="4dp"
+                                android:src="@drawable/ic_minus" />
+                            <TextView
+                                android:id="@+id/tv_count_3"
+                                android:layout_width="22dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="#FF5436"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                            <ImageView
+                                android:id="@+id/btn_plus_3"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:padding="4dp"
+                                android:src="@drawable/ic_plus"
+                                app:tint="#FF5436" />
+                        </LinearLayout>
+                    </FrameLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="14dp"
+                        android:layout_toEndOf="@id/img_item3"
+                        android:layout_toStartOf="@id/container_counter3"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sourdough"
+                            android:textColor="#1E293B"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Roti fermentasi alami"
+                            android:textColor="#94A3B8"
+                            android:textSize="12sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Rp 18.000"
+                            android:textColor="#FF5436"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Item 4: Cappuccino -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+                    <ImageView
+                        android:id="@+id/img_item4"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cappucino" />
+                    <FrameLayout
+                        android:id="@+id/container_counter4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true">
+                        <ImageView
+                            android:id="@+id/btn_add_4"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_circle_orange"
+                            android:padding="6dp"
+                            android:src="@drawable/ic_plus" />
+                        <LinearLayout
+                            android:id="@+id/layout_counter_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_counter_pill"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="4dp"
+                            android:visibility="gone">
+                            <ImageView
+                                android:id="@+id/btn_minus_4"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:padding="4dp"
+                                android:src="@drawable/ic_minus" />
+                            <TextView
+                                android:id="@+id/tv_count_4"
+                                android:layout_width="22dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="#FF5436"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                            <ImageView
+                                android:id="@+id/btn_plus_4"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:padding="4dp"
+                                android:src="@drawable/ic_plus"
+                                app:tint="#FF5436" />
+                        </LinearLayout>
+                    </FrameLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="14dp"
+                        android:layout_toEndOf="@id/img_item4"
+                        android:layout_toStartOf="@id/container_counter4"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cappuccino"
+                            android:textColor="#1E293B"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Espresso, steamed milk, foam"
+                            android:textColor="#94A3B8"
+                            android:textSize="12sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Rp 24.000"
+                            android:textColor="#FF5436"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Item 5: Matcha Latte -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+                    <ImageView
+                        android:id="@+id/img_item5"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/matcha" />
+                    <FrameLayout
+                        android:id="@+id/container_counter5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true">
+                        <ImageView
+                            android:id="@+id/btn_add_5"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_circle_orange"
+                            android:padding="6dp"
+                            android:src="@drawable/ic_plus" />
+                        <LinearLayout
+                            android:id="@+id/layout_counter_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_counter_pill"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="4dp"
+                            android:visibility="gone">
+                            <ImageView
+                                android:id="@+id/btn_minus_5"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:padding="4dp"
+                                android:src="@drawable/ic_minus" />
+                            <TextView
+                                android:id="@+id/tv_count_5"
+                                android:layout_width="22dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="#FF5436"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+                            <ImageView
+                                android:id="@+id/btn_plus_5"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:padding="4dp"
+                                android:src="@drawable/ic_plus"
+                                app:tint="#FF5436" />
+                        </LinearLayout>
+                    </FrameLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="14dp"
+                        android:layout_toEndOf="@id/img_item5"
+                        android:layout_toStartOf="@id/container_counter5"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Matcha Latte"
+                            android:textColor="#1E293B"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Matcha Jepang, susu segar"
+                            android:textColor="#94A3B8"
+                            android:textSize="12sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Rp 25.000"
+                            android:textColor="#FF5436"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- 3. BAR CHECKOUT FLOATING -->
+    <RelativeLayout
+        android:id="@+id/layout_checkout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_tab_active"
+        android:elevation="6dp"
+        android:paddingHorizontal="16dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_cart"
+                app:tint="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tv_cart_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="0 item"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="•"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tv_cart_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 0"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="Lihat pesanan >"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- 4. BOTTOM NAVIGATION BAR -->
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/nav_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_home" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Home"
+                android:textColor="#FF5436"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav_menu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_menu_book" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Menu"
+                android:textColor="#94A3B8"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav_favorites"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_heart" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Favorites"
+                android:textColor="#94A3B8"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_person"
+                app:tint="#94A3B8" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Profile"
+                android:textColor="#94A3B8"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav_order"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_cart" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Order"
+                android:textColor="#94A3B8"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

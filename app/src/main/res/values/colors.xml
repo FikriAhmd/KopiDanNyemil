@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core & Missing Colors Triggering Build Failed -->
+    <color name="success_green">#38A169</color>
+    <color name="cavosh_orange_soft">#FFF0EC</color>
+
+    <!-- Base & Core Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="primary">#FF5733</color>
+    <color name="accent">#FF5733</color>
+    <color name="divider">#E2E8F0</color>
+
+    <!-- Complete Cavosh Series -->
+    <color name="cavosh">#FF5733</color>
+    <color name="cavosh_primary">#FF5733</color>
+    <color name="cavosh_secondary">#FFF0EC</color>
+    <color name="cavosh_orange">#FF5733</color>
+    <color name="cavosh_orange_light">#FFF0EC</color>
+    <color name="cavosh_orange_dark">#D94320</color>
+    <color name="cavosh_orange_accent">#F2522E</color>
+    <color name="cavosh_orange_bg">#FFF0EC</color>
+    <color name="cavosh_orange_border">#FFEDD5</color>
+    <color name="cavosh_red">#E53E3E</color>
+    <color name="cavosh_red_light">#FED7D7</color>
+    <color name="cavosh_green">#38A169</color>
+    <color name="cavosh_green_light">#C6F6D5</color>
+    <color name="cavosh_dark">#121D27</color>
+    <color name="cavosh_navy">#1B2A38</color>
+    <color name="cavosh_navy_light">#263847</color>
+    <color name="cavosh_navy_dark">#121D27</color>
+    <color name="cavosh_bg">#F8FAFC</color>
+    <color name="cavosh_text">#1E293B</color>
+    <color name="cavosh_text_main">#1E293B</color>
+    <color name="cavosh_text_secondary">#64748B</color>
+    <color name="cavosh_text_muted">#94A3B8</color>
+    <color name="cavosh_card">#FFFFFF</color>
+    <color name="cavosh_white">#FFFFFF</color>
+    <color name="cavosh_gray">#94A3B8</color>
+    <color name="cavosh_gray_light">#F1F5F9</color>
+    <color name="cavosh_stroke">#E2E8F0</color>
+
+    <!-- Confirmation & Status Series -->
+    <color name="confirmation">#FF5733</color>
+    <color name="confirmation_bg">#FFF0EC</color>
+    <color name="confirmation_text">#1E293B</color>
+    <color name="success">#38A169</color>
+    <color name="success_bg">#C6F6D5</color>
+
+    <!-- Surface Series -->
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_white">#FFFFFF</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="surface_bg">#F8FAFC</color>
+    <color name="surface_variant">#F1F5F9</color>
+    <color name="surface_background">#F8FAFC</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_dark">#121D27</color>
+    <color name="surface_container">#F8FAFC</color>
+    <color name="surface_primary">#FFFFFF</color>
+    <color name="surface_secondary">#F1F5F9</color>
+
+    <!-- Brand Splash & Primary Colors -->
+    <color name="orange_primary">#FF5733</color>
+    <color name="orange_accent">#F2522E</color>
+    <color name="orange_soft">#FFF0EC</color>
+    <color name="orange_border">#FFEDD5</color>
+
+    <!-- Navy Series -->
+    <color name="navy_primary">#1B2A38</color>
+    <color name="navy_dark">#121D27</color>
+    <color name="navy_bg">#1B2A38</color>
+
+    <!-- Gray Series -->
+    <color name="gray_light">#F1F5F9</color>
+    <color name="gray_lighter">#F8FAFC</color>
+    <color name="gray_light_bg">#F8FAFC</color>
+    <color name="gray_medium">#94A3B8</color>
+    <color name="gray_dark">#64748B</color>
+    <color name="gray_border">#E2E8F0</color>
+    <color name="gray_bg">#F8FAFC</color>
+
+    <!-- Text Series -->
+    <color name="text_main">#1E293B</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_sub">#94A3B8</color>
+    <color name="text_muted">#94A3B8</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_dark">#1E293B</color>
+
+    <!-- App Background Series -->
+    <color name="bg_app">#F8FAFC</color>
+    <color name="bg_main">#F8FAFC</color>
+    <color name="bg_card">#FFFFFF</color>
+
+    <!-- Coffee Series -->
+    <color name="coffee_primary">#F2522E</color>
+    <color name="coffee_light_bg">#FFF0EC</color>
+    <color name="coffee_dark">#121D27</color>
+</resources>

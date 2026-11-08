@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B2A38"
+    tools:context=".MainActivity">
+
+    <!-- 1. Hiasan Motif Biji Kopi Kanan Atas -->
+    <ImageView
+        android:id="@+id/img_beans_pattern"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_beans_pattern" />
+
+    <!-- 2. Container Tengah (Ilustrasi + Teks) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <!-- Gambar Ilustrasi Kopi & Orang -->
+        <ImageView
+            android:id="@+id/img_hero"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_coffee_hero" />
+
+        <!-- Title 1: Welcome to -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Welcome to"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <!-- Title 2: Kopi and Nyemil (Font Serif Mewah) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="serif"
+            android:text="Kopi and Nyemil"
+            android:textColor="#FF5436"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <!-- Subtitle Slogan -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0.04"
+            android:text="Get a taste of your wish"
+            android:textColor="#8AA0B2"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <!-- 3. Tombol Get Started Oranye -->
+    <Button
+        android:id="@+id/btn_get_started"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#FF5436"
+        android:text="Get Started"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
