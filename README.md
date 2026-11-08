@@ -58,7 +58,7 @@ Pengguna dapat mendaftar atau login, melihat daftar makanan dan minuman, menamba
 
 | Splash | Sign Up | Login | Register |
 | :---: | :---: | :---: | :---: |
-| <img src="splash.png.jpeg" width="160"> | <img src="signup.jpeg" width="160"> | <img src="login.png.jpeg" width="160"> | <img src="register.png.jpeg" width="160"> |
+| <img src="splash.png.jpeg" width="160"> | <img src="signup.png.jpeg" width="160"> | <img src="login.png.jpeg" width="160"> | <img src="register.png.jpeg" width="160"> |
 
 | Home (1) | Home (2) | Profile | Alamat (1) |
 | :---: | :---: | :---: | :---: |
