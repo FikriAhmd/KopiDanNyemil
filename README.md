@@ -75,19 +75,36 @@ KopiDanNyemil/
 
 ## 📸 Screenshot Aplikasi
 
-| Halaman | Tampilan |
-|---|---|
-| Splash | <img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 01 19" src="https://github.com/user-attachments/assets/ec0ed476-630a-46d1-9921-caf57eeb3c37" /> |
-| Sign Up | <img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 20 34" src="https://github.com/user-attachments/assets/19ee629e-08a1-44ca-8f96-52db26f9f022" /> |
-| Login | <img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 20 34" src="https://github.com/user-attachments/assets/c36df089-819f-46bf-8e31-fca0f62f3021" /> |
-| Register | <img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 22 00" src="https://github.com/user-attachments/assets/a23ec71e-4701-466d-a258-39d3553d4e9f" /> |
-| Home | <img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 22 38" src="https://github.com/user-attachments/assets/42a12025-9681-4de8-9cb2-de337dbd9123" /> |
-| Home 2 | <img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 23 54" src="https://github.com/user-attachments/assets/69a8f5df-ba7a-4ae3-93a6-6cc9eb0fa7a5" /> |
-| Profile | <img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 24 46" src="https://github.com/user-attachments/assets/d14d41bf-cfc3-4873-8e22-416633dc78a6" /> |
-| Alamat Pengiriman | <img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 25 53" src="https://github.com/user-attachments/assets/4f47ad2f-7862-4b0b-91da-ba80392c4e94" /> |
-| Alamat Pengiriman 2 | <img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 26 39" src="https://github.com/user-attachments/assets/3619e453-e90c-4667-a334-a9545887d3dd" /> |
-| Konfirmasi Pesanan | <img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 27 33" src="https://github.com/user-attachments/assets/952f639f-f2b9-4a8f-90cd-75cc54588ae4" /> |
-| Konfirmasi Pesanan 2 | <img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 28 17" src="https://github.com/user-attachments/assets/fea04438-e37f-4df7-bf5b-45edc5061d33" /> |
+<div align="center">
+  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 01 19" src="https://github.com/user-attachments/assets/cc3bdb8b-8e5c-487c-a445-04d4c1e352ab" />
+ alt="Splash" />
+  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 20 34" src="https://github.com/user-attachments/assets/d19ba2b9-7e59-43ed-ad8c-9a1a8ba623e5" />
+ alt="Sign Up" />
+  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 20 34" src="https://github.com/user-attachments/assets/b309980c-8c07-4352-b5da-558240aab6b9" />
+ alt="Login" />
+  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 22 00" src="https://github.com/user-attachments/assets/367b17d8-424a-4273-a027-a5563b50cdbf" />
+ alt="Register" />
+</div>
+
+<div align="center">
+  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 22 38" src="https://github.com/user-attachments/assets/f0087376-ac43-4193-bc2c-9b4683741bb1" />
+ alt="Home" />
+  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 23 54" src="https://github.com/user-attachments/assets/5075507d-d586-4a29-8bfc-5684e06a8cf6" />
+ alt="Home 2" />
+  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 24 46" src="https://github.com/user-attachments/assets/238fbf1c-7aa4-4125-aa81-2d62654e18ba" />
+ alt="Profile" />
+  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 25 53" src="https://github.com/user-attachments/assets/b5e24c68-2c51-48d0-9dca-4191dd2553ab" />
+ alt="Alamat Pengiriman" />
+</div>
+
+<div align="center">
+  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 26 39" src="https://github.com/user-attachments/assets/f096a4e4-9242-4a84-ad51-af5216a92fc6" />
+" alt="Alamat Pengiriman 2" />
+  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 27 33" src="https://github.com/user-attachments/assets/b67ce20e-a1c0-4d7c-85a0-2bb4fb3f346a" />
+ alt="Konfirmasi Pesanan" />
+  <img width="180" src=<img width="720" height="1440" alt="WhatsApp Image 2026-11-09 at 02 28 17" src="https://github.com/user-attachments/assets/a0197f85-a35d-48c9-8fd8-fe48f9a5ca01" />
+ alt="Konfirmasi Pesanan 2" />
+</div>
 
 ## 📁 Struktur Project
 
