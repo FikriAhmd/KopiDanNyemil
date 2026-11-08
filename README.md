@@ -54,15 +54,21 @@ Pengguna dapat mendaftar atau login, melihat daftar makanan dan minuman, menamba
 
 ---
 
-### Splash, Sign Up, Login, dan Register
+## 📸 Screenshot Aplikasi
+
+### Bagian 1: Auth & Halaman Utama Awal
 | Splash | Sign Up | Login | Register |
 | :---: | :---: | :---: | :---: |
-| <img src="splash.png" width="200"> | <img src="signup.png" width="200"> | <img src="login.png" width="200"> | <img src="register.png" width="200"> |
+| <img src="splash.png" width="180"> | <img src="sign up.png" width="180"> | <img src="login.png" width="180"> | <img src="register.png" width="180"> |
 
-### Home, Profile, Alamat, dan Konfirmasi
-| Home | Profile | Alamat | Konfirmasi |
-| :---: | :---: | :---: | :---: |
-| <img src="home.png.jpeg" width="200"> | <img src="profile.png" width="200"> | <img src="alamat.png.jpeg" width="200"> | <img src="konfirmasi.png.jpeg" width="200"> |
+### Bagian 2: Home, Profile, Alamat, & Konfirmasi (Lengkap V1 & V2)
+| Home (1) | Home (2) | Profile | Alamat (1) | Alamat (2) |
+| :---: | :---: | :---: | :---: | :---: |
+| <img src="home.png.jpeg" width="150"> | <img src="home 2.png.jpeg" width="150"> | <img src="profile.png" width="150"> | <img src="alamat.png.jpeg" width="150"> | <img src="alamat 2.png.jpeg" width="150"> |
+
+| Konfirmasi (1) | Konfirmasi (2) |
+| :---: | :---: |
+| <img src="konfirmasi.png.jpeg" width="180"> | <img src="konfirmasi 2.png.jpeg" width="180"> |
 
 ---
 
@@ -82,9 +88,4 @@ KopiDanNyemil/
 │                       ├── theme/Theme.kt     # palet biru muda dan putih
 │                       ├── components/        # TextField, Button, BottomBar, dll.
 │                       └── screens/           # 8 layar sesuai wireframe
-├── screenshots/                               # Kumpulan gambar screenshot
 └── README.md
-
-👤 Author
-Nama: Fikri Ahmad Ramdani
-NIM: 1247050003
