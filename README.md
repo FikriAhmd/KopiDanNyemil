@@ -54,17 +54,15 @@ Pengguna dapat mendaftar atau login, melihat daftar makanan dan minuman, menamba
 
 ---
 
-## 📸 Screenshot Aplikasi
-
 ### Splash, Sign Up, Login, dan Register
 | Splash | Sign Up | Login | Register |
 | :---: | :---: | :---: | :---: |
-| <img src="screenshots/splash.png" width="200"> | <img src="screenshots/signup.png" width="200"> | <img src="screenshots/login.png" width="200"> | <img src="screenshots/register.png" width="200"> |
+| <img src="splash.png" width="200"> | <img src="signup.png" width="200"> | <img src="login.png" width="200"> | <img src="register.png" width="200"> |
 
 ### Home, Profile, Alamat, dan Konfirmasi
 | Home | Profile | Alamat | Konfirmasi |
 | :---: | :---: | :---: | :---: |
-| <img src="screenshots/home.png" width="200"> | <img src="screenshots/profile.png" width="200"> | <img src="screenshots/alamat.png" width="200"> | <img src="screenshots/konfirmasi.png" width="200"> |
+| <img src="home.png.jpeg" width="200"> | <img src="profile.png" width="200"> | <img src="alamat.png.jpeg" width="200"> | <img src="konfirmasi.png.jpeg" width="200"> |
 
 ---
 
