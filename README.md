@@ -41,7 +41,7 @@ Pengguna dapat mendaftar atau login, melihat daftar makanan dan minuman, menamba
 
 1. Install Android Studio (versi terbaru) dan JDK 17.
 2. Buka folder project **KopiDanNyemil** lewat **File → Open**, lalu tunggu *Gradle Sync* selesai.
-3. Pilih emulator atau HP Android (Android 7.0 / API 24 ke atas).
+3. Pilih emulator atau HP Android (Android 7.0 / API 24 ke alto).
 4. Klik tombol **Run ▶**.
 5. **Akun demo:** username `demo` dan password `demo123`, atau buat akun baru lewat Register.
 
@@ -56,19 +56,20 @@ Pengguna dapat mendaftar atau login, melihat daftar makanan dan minuman, menamba
 
 ## 📸 Screenshot Aplikasi
 
-### Bagian 1: Auth & Halaman Utama Awal
+### Baris 1: 4 Ke Kanan (Splash, Sign Up, Login, Register)
 | Splash | Sign Up | Login | Register |
 | :---: | :---: | :---: | :---: |
-| <img src="splash.png" width="180"> | <img src="sign up.png" width="180"> | <img src="login.png" width="180"> | <img src="register.png" width="180"> |
+| <img src="splash.png" width="160"> | <img src="sign up.png" width="160"> | <img src="login.png" width="160"> | <img src="register.png" width="160"> |
 
-### Bagian 2: Home, Profile, Alamat, & Konfirmasi (Lengkap V1 & V2)
-| Home (1) | Home (2) | Profile | Alamat (1) | Alamat (2) |
-| :---: | :---: | :---: | :---: | :---: |
-| <img src="home.png.jpeg" width="150"> | <img src="home 2.png.jpeg" width="150"> | <img src="profile.png" width="150"> | <img src="alamat.png.jpeg" width="150"> | <img src="alamat 2.png.jpeg" width="150"> |
+### Baris 2: 4 Ke Kanan (Home 1, Home 2, Profile, Alamat 1)
+| Home (1) | Home (2) | Profile | Alamat (1) |
+| :---: | :---: | :---: | :---: |
+| <img src="home.png.jpeg" width="160"> | <img src="home 2.png.jpeg" width="160"> | <img src="profile.png" width="160"> | <img src="alamat.png.jpeg" width="160"> |
 
-| Konfirmasi (1) | Konfirmasi (2) |
-| :---: | :---: |
-| <img src="konfirmasi.png.jpeg" width="180"> | <img src="konfirmasi 2.png.jpeg" width="180"> |
+### Baris 3: Sisa 3 Ke Kanan (Alamat 2, Konfirmasi 1, Konfirmasi 2)
+| Alamat (2) | Konfirmasi (1) | Konfirmasi (2) |
+| :---: | :---: | :---: |
+| <img src="alamat 2.png.jpeg" width="160"> | <img src="konfirmasi.png.jpeg" width="160"> | <img src="konfirmasi 2.png.jpeg" width="160"> |
 
 ---
 
@@ -89,3 +90,7 @@ KopiDanNyemil/
 │                       ├── components/        # TextField, Button, BottomBar, dll.
 │                       └── screens/           # 8 layar sesuai wireframe
 └── README.md
+
+👤 Author
+Nama: Fikri Ahmad Ramdani
+NIM: 1247050003
